@@ -1,4 +1,4 @@
-![Backrooms Terminal](backroomsterminal.png)
+![Backrooms Terminal](roomexe.png)
 
 ```
 ========================================
@@ -2071,5 +2071,6 @@ MEMORY:
   CAPACITY: 512MB
   UTILIZATION: 95.1%
 ```
+
 
 Trigger manual compression:
