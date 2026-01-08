@@ -1,0 +1,42 @@
+{
+  "persistence": {
+    "backend": "FILESYSTEM",
+    "path": "/var/lib/room.exe/rooms",
+    "flush_interval": 0,
+    "compression": "zstd",
+    "backup": {
+      "enabled": true,
+      "interval": 3600,
+      "retention": 168,
+      "path": "/var/lib/room.exe/backups",
+      "compression": "gzip"
+    }
+  },
+  "limits": {
+    "max_rooms": 1024,
+    "max_room_memory": 536870912,
+    "max_input_size": 65536,
+    "max_output_size": 16777216,
+    "entity_timeout": 30,
+    "input_queue_depth": 16,
+    "memory_entries_max": 1000000
+  },
+  "logging": {
+    "level": "INFO",
+    "format": "text",
+    "output": "stderr"
+  },
+  "entity": {
+    "init_timeout": 5,
+    "response_buffer": 8192,
+    "memory_compression_threshold": 0.85,
+    "enable_observations": true
+  },
+  "daemon": {
+    "enabled": false,
+    "bind": "127.0.0.1:9000",
+    "workers": 4,
+    "max_connections": 64,
+    "connection_timeout": 300
+  }
+}
