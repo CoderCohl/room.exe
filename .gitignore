@@ -1,0 +1,7 @@
+target/
+var/
+*.db
+*.log
+*.tar.gz
+.env
+.DS_Store
